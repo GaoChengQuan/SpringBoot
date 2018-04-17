@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/boot
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+server:
+  port: 8082
+  servlet.context-path: /situ
+
+name: zhangsan
+age: 10
+content: "name: ${name}, age: ${age}"
+
+student: 
+  name: lisi
+  age: 18
