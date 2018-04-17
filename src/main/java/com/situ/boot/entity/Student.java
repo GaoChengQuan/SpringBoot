@@ -2,16 +2,8 @@ package com.situ.boot.entity;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-
-@Entity //表示实体类映射数据库
 public class Student implements Serializable {
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //主键自增
 	private Integer id;
 	private String name;
 	private Integer age;

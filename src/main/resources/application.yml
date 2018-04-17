@@ -1,23 +1,21 @@
+server:
+  port: 8082
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/boot
     username: root
     password: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+  mvc: 
+    view: 
+      prefix: /WEB-INF/jsp/ # 页面默认前缀目录
+      suffix: .jsp          # 响应页面默认后缀
+
+mybatis: 
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.situ.entity
 
 
-server:
-  port: 8082
-  servlet.context-path: /situ
 
-name: zhangsan
-age: 10
-content: "name: ${name}, age: ${age}"
-
-student: 
-  name: lisi
-  age: 18
