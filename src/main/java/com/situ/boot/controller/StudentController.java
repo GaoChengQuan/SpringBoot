@@ -51,4 +51,14 @@ public class StudentController {
     	return "redirect:/list";
 	}
     
+    @RequestMapping("/getAddPage")
+    public String getAddPage() {
+		return "add";
+	}
+    
+    @RequestMapping("/add")
+    public String add(Student student) {
+		studentMapper.add(student);
+		return "redirect:/list";
+	}
 }

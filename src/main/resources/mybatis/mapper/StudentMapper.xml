@@ -24,7 +24,7 @@
 	   WHERE id = #{id}
     </select>
 
-    <insert id="insert" parameterType="com.situ.boot.entity.Student" >
+    <insert id="add" parameterType="com.situ.boot.entity.Student" >
        INSERT INTO 
        		student
        		(name,age) 
@@ -49,5 +49,4 @@
        WHERE 
        		 id =#{id}
     </delete>
-
 </mapper>

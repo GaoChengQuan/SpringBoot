@@ -17,9 +17,16 @@
 				location.href = "${pageContext.request.contextPath}/deleteById?id=" + id;
 			}
 		}
+		
 	</script>
+	<style type="text/css">
+		table{
+			margin: 0 auto
+		}
+	</style>
 </head>
 <body>
+	<a class="btn btn-primary" href="${pageContext.request.contextPath}/getAddPage">添加学生</a>
 	<table class="table table-hover">
 		<thead>
 			<tr>

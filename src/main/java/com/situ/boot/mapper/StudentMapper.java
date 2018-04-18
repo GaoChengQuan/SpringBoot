@@ -12,5 +12,6 @@ public interface StudentMapper {
 	Student findById(Integer id);
 
 	void update(Student student);
-	
+
+	void add(Student student);
 }
